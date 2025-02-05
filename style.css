@@ -239,6 +239,62 @@ li {
 }
 
 /*--------------------------------
+ Flex
+---------------------------------*/
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flexItem {
+  padding: 20px;
+  width: 32%;
+  background-color: #fff;
+}
+
+.flexItem h2{
+  padding: 0.5em 0 0 0;
+  font-size: 1.2em;
+}
+
+.careerPeriod{
+  color: #b1b1b1;
+  font-size: 90%;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.flexItem:not(:nth-child(3n+3)) {
+  margin-right: 2%;
+}
+
+.flexItem:nth-child(n+4) {
+  margin-top: 30px;
+}
+
+@media not all and (min-width: 768px) {
+  .flexItem {
+    width: 100%;
+  }
+
+  .flexItem:not(:nth-child(3n+3)) {
+    margin-right: 0;
+  }
+
+  .flexItem:nth-child(n+2) {
+    margin-top: 30px;
+  }
+
+  .flexWrap {
+    padding: 0 10px;
+  }
+}
+
+/*--------------------------------
  Contact
 ---------------------------------*/
 .contact-list {
